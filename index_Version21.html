@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TRX AR - Manutenção de Ar-Condicionado</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      /* Imagem de fundo de manutenção de ar-condicionado (Unsplash, uso livre) */
+      background: linear-gradient(rgba(0,44,70,0.6), rgba(0,44,70,0.7)),
+        url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat fixed;
+    }
+    header {
+      background: rgba(0, 119, 204, 0.90);
+      color: #fff;
+      text-align: center;
+      padding: 48px 0 24px 0;
+      box-shadow: 0 4px 16px #0002;
+    }
+    .nome-laranja {
+      color: #ff9800;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+    nav {
+      background: rgba(0,95,163,0.85);
+      text-align: center;
+      box-shadow: 0 2px 8px #0002;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 28px;
+      text-decoration: none;
+      font-weight: 600;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 1.08em;
+      padding: 18px 0;
+      display: inline-block;
+      transition: color 0.2s;
+      border-bottom: 2px solid transparent;
+    }
+    nav a:hover {
+      color: #ffe600;
+      border-bottom: 2px solid #ffe600;
+    }
+    main {
+      max-width: 1100px;
+      margin: 32px auto 0 auto;
+      background: rgba(255,255,255,0.93);
+      border-radius: 10px;
+      box-shadow: 0 6px 32px #0001;
+      padding: 36px 30px;
+    }
+    section:not(:last-child) {
+      margin-bottom: 40px;
+    }
+    h2 {
+      font-family: 'Montserrat', Arial, sans-serif;
+      color: #0077cc;
+      margin-top: 0;
+      font-size: 2em;
+      letter-spacing: 1px;
+      font-weight: 700;
+    }
+    .servicos-lista {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .servico {
+      background: #f2f8fc;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px #0077cc18;
+      padding: 22px 18px;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      font-size: 1.09em;
+      min-height: 80px;
+      transition: transform 0.12s;
+    }
+    .servico:hover {
+      transform: translateY(-4px) scale(1.03);
+      box-shadow: 0 4px 16px #0077cc28;
+    }
+    .servico i {
+      font-size: 2em;
+      color: #0bb3ff;
+      margin-top: 2px;
+      min-width: 32px;
+    }
+    .contato-info p {
+      margin: 8px 0 0 0;
+      font-size: 1.1em;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .contato-info strong {
+      font-weight: 600;
+      color: #0077cc;
+    }
+    .whatsapp {
+      position: fixed;
+      bottom: 26px;
+      right: 26px;
+      background-color: #25d366;
+      color: white;
+      padding: 13px 26px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.21em;
+      box-shadow: 0 0 18px rgba(0,0,0,0.28);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      z-index: 99;
+      transition: background 0.2s, transform 0.12s;
+    }
+    .whatsapp:hover {
+      background: #1ec35a;
+      transform: scale(1.04);
+    }
+    footer {
+      background: #222d;
+      color: #fff;
+      text-align: center;
+      padding: 18px 0;
+      margin-top: 38px;
+      font-size: 1.07em;
+      letter-spacing: 1px;
+    }
+    @media (max-width: 700px) {
+      main { padding: 16px 3vw; }
+      .servicos-lista { grid-template-columns: 1fr; }
+      nav a { margin: 0 10px; font-size: 1em; }
+      .whatsapp { padding: 10px 15px; font-size: 1em; right: 10px; bottom: 10px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1><span class="nome-laranja">TRX AR</span> Manutenção de Ar-Condicionado</h1>
+  <p>Climatize seu ambiente com tecnologia, confiança e rapidez.</p>
+</header>
+
+<nav>
+  <a href="#sobre">Sobre</a>
+  <a href="#servicos">Serviços</a>
+  <a href="#contato">Contato</a>
+</nav>
+
+<main>
+  <section id="sobre">
+    <h2>Sobre a <span class="nome-laranja">TRX AR</span></h2>
+    <p>
+      A <strong class="nome-laranja">TRX AR</strong> é referência em <b>manutenção, instalação e higienização</b> de ar-condicionado em residências, empresas e condomínios. Nossa equipe é especializada e utiliza as melhores tecnologias do mercado, garantindo qualidade, rapidez e o melhor atendimento. Com transparência e garantia, deixamos seu ambiente sempre confortável e saudável.
+    </p>
+  </section>
+
+  <section id="servicos">
+    <h2>Nossos Serviços</h2>
+    <ul class="servicos-lista">
+      <li class="servico"><i class="fas fa-snowflake"></i> Instalação de Ar-Condicionado Split, Janela e Multi Split</li>
+      <li class="servico"><i class="fas fa-broom"></i> Limpeza, Higienização e Sanitização Completa</li>
+      <li class="servico"><i class="fas fa-cogs"></i> Manutenção Preventiva e Corretiva</li>
+      <li class="servico"><i class="fas fa-building"></i> Atendimento para Empresas e Condomínios</li>
+      <li class="servico"><i class="fas fa-gas-pump"></i> Recarga de Gás Refrigerante</li>
+      <li class="servico"><i class="fas fa-thermometer-half"></i> Avaliação e Troca de Peças</li>
+    </ul>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <div class="contato-info">
+      <p><i class="fas fa-phone-alt"></i> <strong>Telefone:</strong> (15)997268602</p>
+      <p><i class="fas fa-envelope"></i> <strong>Email:</strong> contato@trxar.com.br</p>
+      <p><i class="fab fa-whatsapp"></i> <strong>WhatsApp:</strong> (15)997268602</p>
+      <p style="margin-top: 16px;">Solicite seu orçamento gratuito, tire dúvidas ou agende uma visita técnica!</p>
+    </div>
+  </section>
+</main>
+
+<a class="whatsapp" href="https://wa.me/5515997268602" target="_blank">
+  <i class="fab fa-whatsapp"></i> Fale no WhatsApp
+</a>
+
+<footer>
+  <p>&copy; 2025 <span class="nome-laranja">TRX AR</span> Manutenção de Ar. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
